@@ -23,7 +23,9 @@ public class TodayServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		LocalDateTime now = LocalDateTime.now();
 		String today = now.format(DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 a hh시 mm분"));
+		
 		response.setContentType("text/html;charset=UTF-8");
+		
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
 		out.println("<head>");
@@ -32,5 +34,6 @@ public class TodayServlet extends HttpServlet {
 		out.println("<a href='html/index.html'><h2>메인 화면</h2></a><br>");
 		out.println("<h1>"+today+"</h1>");
 		out.println("</html>");
+		out.close();
 	}
 }
