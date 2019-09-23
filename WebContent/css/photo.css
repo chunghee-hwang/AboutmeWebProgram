@@ -1,0 +1,22 @@
+.image {
+    width: 300px;
+    border: solid rgba(0, 61, 31, 0.5);
+    position:relative;
+    border-radius: 5px;
+}
+.left_view{
+    float:left;
+}
+.clear_left{
+    position:relative;
+    clear:left;
+}
+.image_list{
+    position:relative;
+    padding:5% 3%;
+    border-top:solid rgba(0, 74, 117, 0.5);
+}
+.paragraph{
+    position: relative;
+    left:50px;
+}
