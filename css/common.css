@@ -23,6 +23,7 @@ ul{
 #tab {
     width: 100%;
     padding: 0;
+    
 }
 
 #tab>li>a {
@@ -48,18 +49,23 @@ header{
     position: relative;
     top:0;
     left:0;
+    border:solid  rgba(158, 158, 158, 0.527);
 }
 
 section{
+
+    padding:5% 3%;
     position: relative;
-    top:10px;
-    bottom: 10px;
+    top:0px;
+
+    border:solid rgba(158, 158, 158, 0.527);
 }
 footer {
     position:relative;
-    top:20px;
+
     padding:20px;
     color: grey;
+    border:solid rgba(158, 158, 158, 0.527);
 }
 
 .link{
@@ -80,4 +86,12 @@ footer a{
     background-color: cornflowerblue;
     height:2px;
 
+}
+
+.paragraph {
+    width: 80%;
+    text-align: justify;
+    padding: 1% 5%;
+    word-break: break-word;
+    line-height: 32px;
 }
