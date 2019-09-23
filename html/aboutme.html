@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        소개 페이지
+    </title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <style type="text/css">
+        .paragraph {
+            width: 80%;
+            text-align: justify;
+            padding: 1% 5%;
+            word-break: break-word;
+            line-height: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <ul id="tab" class="layer_fixed">
+            <li><a href="./index.html" class="shadow_box link">홈</a></li>
+            <li><a href="./aboutme.html" class="shadow_box link">자기 소개</a></li>
+            <li><a href="./photo.html" class="shadow_box link">내 사진</a></li>
+            <li><a href="/aboutme/today" class="shadow_box link">몇 시인가요?</a></li>
+        </ul>
+
+        <hr class="horizontal_line" />
+    </header>
+
+    <section>
+        <article class="paragraph">
+            <h2>이런 것을 잘해요</h2>
+            피아노 연주, 프로그래밍을 잘합니다.
+
+
+        </article>
+        <article class="paragraph">
+            <h2>나의 포트폴리오</h2>
+            <a href="https://github.com/hch0821" class="link">https://github.com/hch0821</a><br>
+            &nbsp;제 GitHub 사이트입니다.<br>
+            이 곳에서 제가 여태까지 해왔던 프로젝트들을 볼 수 있습니다.
+
+
+        </article>
+        <article class="paragraph">
+            <h2>나의 최근 프로젝트 설명</h2>
+            &nbsp;최근 제작한 프로젝트로 Follow Me Robot이 있습니다. <br>개발 환경은 Raspberry Pi 3 Model B, Android/ Raspbian, Windows이고 사용 언어와 툴은
+            Python3, Java / Vim, Android Studio을 사용했습니다.<br>
+            &nbsp;여행을 갈 때 사람이 무거운 캐리어를 항상 끌고다니는 것보다 편리하게 사람을 따라오는 자율 주행 캐리어가 있었으면 좋겠다고 생각하여 제작하게 되었고, 마트에서 상품들을 운반해주는 자율주행 카트나
+            자율주행자동차가 다른 자율주행자동차를 따라가게 할 때도 이용될 수 있다고 생각이 듭니다.<br>
+            &nbsp;구현 방법은 이렇습니다. 안드로이드 앱에서 사용자의 옷을 카메라로 찍은 뒤, 사용자가 찍은 사진 중 옷 부분의 픽셀을 터치하여 RGB 값을 라즈베리파이로 블루투스 통신을 이용해 전송하면,
+            라즈베리파이에서 이 RGB 값을 기억하고 있다가 라즈베리파이에 장착된 Pi Cam이 주변 환경을 찍으면서 사용자 옷의 부분 중 원의 형태의 부분의 모든 RGB와 안드로이드에서 받은 RGB값이
+            일치하는지 확인 후, 사용자가 좌우로 이동하면 옷 영상중 원의 형태의 부분이 좌우로 움직이므로 모터를 제어하여 왼쪽 오른쪽으로 회전하고, 사용자가 앞 뒤로 움직이면 그 원이 작아지거나 커지는
+            것을 사용자와 로봇간의 거리로 계산한 뒤 사용자와의 거리를 벌리거나 좁히도록 구현하였습니다. 이 때 원의 반지름은 별도로 지정하였고, RGB값이 주변에 있는 빛의 밝기에 따라 달라질 수 있으므로
+            low값과 high값을 별도로 계산하여 오차를 줄이도록 하였습니다. 또한 비컨을 Follow Me Robot 두어서 Follow Me Robot이 사용자의 스마트폰과 너무 멀어졌을 때 비컨을 더
+            이상 감지하지 못하면 스마트폰 앱에서는 Follow Me Robot이 도난 당했다고 판단하여 진동 알림이 울리도록 하였습니다.
+        </article>
+    </section>
+
+    <footer>
+        <hr class="horizontal_line" />
+        <p>
+            hch0821@naver.com<br>
+            <a href="https://github.com/hch0821" class="link">https://github.com/hch0821</a>
+        </p>
+    </footer>
+</body>
+
+</html>

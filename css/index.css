@@ -1,0 +1,21 @@
+.map {
+    max-width: 500px;
+    border: solid rgba(255, 225, 225, 0.5);
+}
+
+.button {
+    padding: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    width: 150px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: rgba(64, 131, 255, 0.507);
+    font-weight: bolder;
+}
+
+.button_layout {
+    margin: 30px;
+}

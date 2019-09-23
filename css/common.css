@@ -1,0 +1,83 @@
+
+/*출처 : https://3months.tistory.com/222 */
+@font-face 
+{ 
+    font-family: 'NanumBarunGothic';
+    src: url('../font/NanumBarunGothic.eot');
+    src: url('../font/NanumBarunGothic.eot') format('embedded-opentype'),
+    url('../font/NanumBarunGothic.woff') format('woff');
+}
+
+
+body {
+    text-align: center;
+    font-family: 'NanumBarunGothic', 'serif';
+    background-color:rgba(236, 236, 236, 0.486);
+
+}
+
+ul{
+    list-style: none;
+}
+
+#tab {
+    width: 100%;
+    padding: 0;
+}
+
+#tab>li>a {
+    padding: 16px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    display: block;
+    width: 150px;
+}
+
+#tab>li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#tab>li>a:hover {
+    background-color: rgb(167, 167, 167);
+    font-weight: bolder;
+}
+
+header{
+    position: relative;
+    top:0;
+    left:0;
+}
+
+section{
+    position: relative;
+    top:10px;
+    bottom: 10px;
+}
+footer {
+    position:relative;
+    top:20px;
+    padding:20px;
+    color: grey;
+}
+
+.link{
+    text-decoration: none;
+}
+
+footer a{
+    color: grey;
+}
+.shadow_box {
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(148, 148, 148, 0.527);
+}
+
+.horizontal_line{
+
+    color: cornflowerblue;
+    background-color: cornflowerblue;
+    height:2px;
+
+}
