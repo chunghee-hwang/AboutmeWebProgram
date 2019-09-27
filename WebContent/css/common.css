@@ -26,11 +26,19 @@ ul{
     
 }
 
-#tab>li>a {
+#tab>li>.white_anchor{
     padding: 16px;
     background-color: gray;
     text-align: center;
     color: white;
+    display: block;
+    width: 150px;
+}
+#tab>li>.bisque_anchor{
+    padding: 16px;
+    background-color: gray;
+    text-align: center;
+    color: bisque;
     display: block;
     width: 150px;
 }

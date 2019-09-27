@@ -14,15 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/today")
 public class TodayServlet extends HttpServlet {
-       
-    public TodayServlet() {
-        super();
-    }
-
+     
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		LocalDateTime now = LocalDateTime.now();
-		String today = now.format(DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 a hh시 mm분"));
+		String today = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 a hh시 mm분"));
 		
 		response.setContentType("text/html;charset=UTF-8");
 		
@@ -31,8 +26,11 @@ public class TodayServlet extends HttpServlet {
 		out.println("<head>");
 		out.println("<title>몇 시인가요</title>");
 		out.println("</head>");
-		out.println("<a href='html/index.html'><h2>메인 화면</h2></a><br>");
-		out.println("<h1>"+today+"</h1>");
+		out.println("<body style='display:table; width:100%;height:100%;'>");
+		out.println("<a style='position:absolute; top:0;left:0;' href='html/index.html'><h2>메인 화면</h2></a><br>");
+		out.println("<h1 style='display:table-cell; vertical-align:middle; text-align:center;'>"+today+"</h1>");
+
+		out.println("</body>");
 		out.println("</html>");
 		out.close();
 	}
